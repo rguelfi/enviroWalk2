@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviroWalk.DataModel", "EnviroWalk.DataModel\EnviroWalk.DataModel.csproj", "{EF847E26-CA82-442F-92E5-857051F49351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviroWalk.Model", "EnviroWalk.Model\EnviroWalk.Model.csproj", "{45F2783B-8871-4285-A729-920279E06719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviroWalk.Repository.SQLServer", "EnviroWalk.Repository.SQLServer\EnviroWalk.Repository.SQLServer.csproj", "{6FC42B72-95CE-445B-B052-CA733CEBBE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviroWalk.Repository.Interface", "EnviroWalk.RepositoryInterface\EnviroWalk.Repository.Interface.csproj", "{357C7378-A6BA-4E53-8583-17550B74ED9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnviroWalk.WebAPI", "EnviroWalk.WebAPI\EnviroWalk.WebAPI.csproj", "{642B7E9C-643F-4169-B04A-DCA2AD94F517}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF847E26-CA82-442F-92E5-857051F49351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF847E26-CA82-442F-92E5-857051F49351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF847E26-CA82-442F-92E5-857051F49351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF847E26-CA82-442F-92E5-857051F49351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F2783B-8871-4285-A729-920279E06719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F2783B-8871-4285-A729-920279E06719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F2783B-8871-4285-A729-920279E06719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F2783B-8871-4285-A729-920279E06719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC42B72-95CE-445B-B052-CA733CEBBE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC42B72-95CE-445B-B052-CA733CEBBE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC42B72-95CE-445B-B052-CA733CEBBE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC42B72-95CE-445B-B052-CA733CEBBE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357C7378-A6BA-4E53-8583-17550B74ED9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357C7378-A6BA-4E53-8583-17550B74ED9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357C7378-A6BA-4E53-8583-17550B74ED9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357C7378-A6BA-4E53-8583-17550B74ED9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642B7E9C-643F-4169-B04A-DCA2AD94F517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642B7E9C-643F-4169-B04A-DCA2AD94F517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642B7E9C-643F-4169-B04A-DCA2AD94F517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642B7E9C-643F-4169-B04A-DCA2AD94F517}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
