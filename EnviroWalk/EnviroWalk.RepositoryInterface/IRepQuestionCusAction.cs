@@ -9,11 +9,12 @@ namespace EnviroWalk.Repository.Interface
 {
     public interface IRepQuestionCusAction
     {
-        IEnumerable<RepQuestionCusActionModel> RepQuestionCusActions(ReportModel report);
-        RepQuestionCusActionModel GetQuestionCusAction(int ID);
-        void AddRepQuestionCusAction(RepQuestionCusActionModel repQuestionCusAction);
-        void UpdateRepQuestionCusAction(RepQuestionCusActionModel repQuestionCusAction);
-        void DeleteRepQuestionCusAction(RepQuestionCusActionModel repQuestionCusAction);
-        void UpdateRepQuestionCusAction(IEnumerable<RepQuestionCusActionModel> repQuestionCusActions);
+        IEnumerable<RepQuestionCusAction> RepQuestionCusActions(Report report);
+        IEnumerable<RepQuestionCusAction> RepQuestionCusActions(Question question);
+        RepQuestionCusAction GetRepQuestionCusAction(int ID);
+        void AddRepQuestionCusAction(RepQuestionCusAction repQuestionCusAction);
+        void UpdateRepQuestionCusAction(RepQuestionCusAction repQuestionCusAction);
+        void DeleteRepQuestionCusAction(RepQuestionCusAction repQuestionCusAction);
+        void UpdateRepQuestionCusAction(IEnumerable<RepQuestionCusAction> repQuestionCusActions);
     }
 }

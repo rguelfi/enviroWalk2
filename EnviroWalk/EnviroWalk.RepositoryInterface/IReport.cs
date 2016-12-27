@@ -9,11 +9,11 @@ namespace EnviroWalk.Repository.Interface
 {
     public interface IReport
     {
-        ReportModel GetLastReport(int UserID);
-        ReportModel GetReport(int ID);
-        void AddReport(ReportModel report);
-        void UpdateReport(ReportModel report);
-        void DeleteReport(ReportModel report);
-        void UpdateReports(IEnumerable<ReportModel> reports);
+        Report GetLastReport(int UserID);
+        Report GetReport(int ID);
+        void AddReport(Report report);
+        void UpdateReport(Report report);
+        void DeleteReport(Report report);
+        void UpdateReports(IEnumerable<Report> reports);
     }
 }

@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICategory.cs" />
+    <Compile Include="IQuestion.cs" />
     <Compile Include="IReport.cs" />
     <Compile Include="IRepQuestion.cs" />
     <Compile Include="IRepQuestionAction.cs" />
     <Compile Include="IRepQuestionCusAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IQuestionAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnviroWalk.Model\EnviroWalk.Model.csproj">
