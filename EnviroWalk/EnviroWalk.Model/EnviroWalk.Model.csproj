@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportModel.cs" />
-    <Compile Include="RepQuestionActionModel.cs" />
-    <Compile Include="RepQuestionCusActionModel.cs" />
-    <Compile Include="RepQuestionModel.cs" />
+    <Compile Include="QuestionAction.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="RepQuestionAction.cs" />
+    <Compile Include="RepQuestionCusAction.cs" />
+    <Compile Include="RepQuestion.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
