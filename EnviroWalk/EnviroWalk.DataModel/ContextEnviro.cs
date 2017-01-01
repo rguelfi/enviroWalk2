@@ -17,7 +17,8 @@ namespace EnviroWalk.DataModel
 
         public ContextEnviro ()
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ContextEnviro, Configuration>());
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<ContextEnviro, Configuration>());
+            //this.Configuration.LazyLoadingEnabled = false;
         }
     }
 }
