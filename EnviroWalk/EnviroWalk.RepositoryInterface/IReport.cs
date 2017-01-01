@@ -15,5 +15,7 @@ namespace EnviroWalk.Repository.Interface
         void UpdateReport(Report report);
         void DeleteReport(Report report);
         void UpdateReports(IEnumerable<Report> reports);
+        Report SaveReport(Report report);
+        Report EmailReport(int UserID, string safeEmail);
     }
 }
