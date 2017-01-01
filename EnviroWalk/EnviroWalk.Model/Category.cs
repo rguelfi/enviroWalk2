@@ -10,6 +10,6 @@ namespace EnviroWalk.Model
     {
         public int CategoryID { get; set; }
         public string CategoryDescription { get; set; }
-        public virtual ICollection<Question> questions { get; set; }
+        //public virtual ICollection<Question> questions { get; set; }
     }
 }

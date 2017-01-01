@@ -12,6 +12,6 @@ namespace EnviroWalk.Model
         public string QuestionActionDescription { get; set; }
         public int QuestionActionOrder { get; set; }
         public Question Question { get; set; }
-        public virtual ICollection<RepQuestionAction> repQuestionActions { get; set; }
+        //public virtual ICollection<RepQuestionAction> repQuestionActions { get; set; }
     }
 }
