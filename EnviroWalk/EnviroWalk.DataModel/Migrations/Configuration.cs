@@ -10,8 +10,8 @@ namespace EnviroWalk.DataModel.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            AutomaticMigrationDataLossAllowed = true;
+            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationDataLossAllowed = false;
         }
 
         protected override void Seed(EnviroWalk.DataModel.ContextEnviro context)
@@ -20,7 +20,6 @@ namespace EnviroWalk.DataModel.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
-            //
 
             //context.RepQuestion.RemoveRange(context.RepQuestion);
             //context.RepQuestionAction.RemoveRange(context.RepQuestionAction);
@@ -1201,6 +1200,7 @@ namespace EnviroWalk.DataModel.Migrations
                 new RepQuestionAction { RepQuestionActionAns = true, Report = rep5, QuestionAction = act126, RepQuestionActionDate = DateTime.Now }
             );
             context.SaveChanges();
+            
         }
     }
 }
