@@ -45,6 +45,7 @@
     <Compile Include="QuestionAction.cs" />
     <Compile Include="Question.cs" />
     <Compile Include="Report.cs" />
+    <Compile Include="ReportShort.cs" />
     <Compile Include="RepQuestionAction.cs" />
     <Compile Include="RepQuestionCusAction.cs" />
     <Compile Include="RepQuestion.cs" />
