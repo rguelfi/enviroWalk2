@@ -16,7 +16,7 @@ namespace EnviroWalk.WebAPI.Controllers
     {
         // GET Report Default
         //Ex: localhost/api/Report/1
-        public Report Get(int id)
+        public ReportShort Get(int id)
         {
             //report controller
             IReport report = RepositoryFactory.GetRepository<IReport>();
