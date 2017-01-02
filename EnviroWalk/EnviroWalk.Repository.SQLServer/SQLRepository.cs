@@ -14,19 +14,45 @@ namespace EnviroWalk.Repository.SQLServer
 {
     public partial class SQLRepository : IReport
     {
-        public Report GetLastReport(int UserID)
+        public ReportShort GetLastReport(int UserID)
         {
             using (var context = new ContextEnviro())
             {
-                var report = context.Report
+                Report report = new Report();
+
+                var reportTest = context.Report
                 .Include("repQuestions")
                 .Include("repQuestionActions")
                 .Include("repQuestionCusActions")
                 .Where(r => r.UserID == UserID)
                 .OrderByDescending(r => r.ReportDateTime)
+                .Select(r => new ReportShort
+                {
+                    userID = r.UserID,
+                    farmName = r.ReportFarmName,
+                    customactions = r.repQuestionCusActions.Select(c => new CusActionShort
+                    {
+                        id = c.RepQuestionCusActionID,
+                        questionID = c.Question.QuestionID,
+                        description = c.RepQuestionCusActionDescription,
+                        answer = c.RepQuestionCusActionAns,
+                        date = c.RepQuestionCusActionDate
+                    }),
+                    questions = r.repQuestions.Where(qs => qs.RepQuestionAnswer == false).Select(q => new QuestionShort
+                    {
+                        questionID = q.Question.QuestionID,
+                        actions = r.repQuestionActions
+                            .Where(qas => qas.RepQuestionActionAns == true && q.Question.QuestionID == qas.QuestionAction.Question.QuestionID)
+                            .Select(qa => new ActionShort
+                            {
+                                id = qa.QuestionAction.QuestionActionID,
+                                date = qa.RepQuestionActionDate
+                            })
+                    })
+                })
                 .FirstOrDefault();
 
-                return report;
+                return reportTest;
             }
         }
 
