@@ -9,7 +9,7 @@ namespace EnviroWalk.Repository.Interface
 {
     public interface IReport
     {
-        Report GetLastReport(int UserID);
+        ReportShort GetLastReport(int UserID);
         Report GetReport(int ID);
         void AddReport(Report report);
         void UpdateReport(Report report);
@@ -17,5 +17,6 @@ namespace EnviroWalk.Repository.Interface
         void UpdateReports(IEnumerable<Report> reports);
         Report SaveReport(Report report);
         Report EmailReport(int UserID, string safeEmail);
+        bool createDB();
     }
 }
