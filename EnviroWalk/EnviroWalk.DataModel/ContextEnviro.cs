@@ -1,5 +1,4 @@
-﻿using EnviroWalk.DataModel.Migrations;
-using EnviroWalk.Model;
+﻿using EnviroWalk.Model;
 using System.Data.Entity;
 
 
@@ -17,6 +16,7 @@ namespace EnviroWalk.DataModel
 
         public ContextEnviro ()
         {
+            //Database.SetInitializer<ContextEnviro>(new DropCreateDatabaseAlways<ContextEnviro>());
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<ContextEnviro, Configuration>());
             //this.Configuration.LazyLoadingEnabled = false;
         }
