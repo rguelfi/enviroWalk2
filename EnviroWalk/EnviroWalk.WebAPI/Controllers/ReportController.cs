@@ -42,6 +42,20 @@ namespace EnviroWalk.WebAPI.Controllers
         }
 
         [System.Web.Http.HttpGet]
+        [System.Web.Http.Route("report/create")]
+        public HttpResponseMessage CreateDB()
+        {
+            try
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, RepositoryFactory.GetRepository<IReport>().createDB());
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        [System.Web.Http.HttpGet]
         [System.Web.Http.Route("report/getlast/{id:int}")]
         public HttpResponseMessage GetLastReport(int id)
         {
@@ -95,6 +109,12 @@ namespace EnviroWalk.WebAPI.Controllers
         {
             public int UserID { get; set; }
             public string UserEmail { get; set; }
+        }
+
+        public class ReturnMsg
+        {
+            public int Code { get; set; }
+            public string Message { get; set; }
         }
     }
 }
