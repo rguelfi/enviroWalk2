@@ -49,10 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContextEnviro.cs" />
-    <Compile Include="Migrations\201701030758336_dbInicial.cs" />
-    <Compile Include="Migrations\201701030758336_dbInicial.Designer.cs">
-      <DependentUpon>201701030758336_dbInicial.cs</DependentUpon>
+    <Compile Include="ContextEnv.cs" />
+    <Compile Include="Migrations\201701060732453_first.cs" />
+    <Compile Include="Migrations\201701060732453_first.Designer.cs">
+      <DependentUpon>201701060732453_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,8 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701030758336_dbInicial.resx">
-      <DependentUpon>201701030758336_dbInicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701060732453_first.resx">
+      <DependentUpon>201701060732453_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
